@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>
+program for area of circle
+</title>
+</head>
+<body>
+<form action="aoc.php" method="GET">
+Area Of Circle is PIE*R<sup>2</sup>
+<br><br>
+where PIE = 22/7 = 3.142
+<br><br>
+Enter the value of the Radius: <br>
+<h2>
+R <input type="text" name="r"/><br>
+<input type="submit" value="calculate"/>
+</h2>
+</form>
+</body>
+</html>
+
+aoc.php
+<?php
+$pie=3.142;
+$R=$_GET['r'];
+$AOC=$pie*$R*$R;
+echo ("Area is =".$AOC);
+?>
