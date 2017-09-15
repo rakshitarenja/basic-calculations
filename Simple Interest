@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>
+program for Simple Interest
+</title>
+</head>
+<body>
+<form action="SI.php" method="GET">
+Formula for SI is = (P * R * T)/100
+<br><br>
+Enter the value of the following: <br>
+<h2>
+P <input type="text" name="p"/><br>
+R <input type="text" name="r"/><br>
+T <input type="text" name="t"/><br>
+<input type="submit" value="calculate"/>
+</h2>
+</form>
+</body>
+</html>
+
+si,.php
+<?php
+$P=$_GET['p'];
+$R=$_GET['r'];
+$T=$_GET['t'];
+$SI=$P*$R*$T/100;
+echo ("SI is =".$SI);
+?>
