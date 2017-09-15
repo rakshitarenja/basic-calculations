@@ -1,0 +1,28 @@
+<html>
+<body>
+<form action='' method="GET">
+<h1>To find the value of A is Positive or Negative</h1><br>
+Enter the value of A: <input type="text" name="a"/><br>
+<input type="submit" value="submit" name="submit"/>
+</form>
+</body>
+</html>
+
+<?php
+if(isset($_GET['submit']))
+	{
+	$A=$_GET['a'];
+if($A==0)
+	{
+	echo("A is neutral".$A);
+	}
+else if($A<0)
+	{
+	echo("A is negative".$A);
+	}
+else
+	{
+	echo("A is positive".$A);
+	}
+	}
+?>
